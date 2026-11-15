@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pl" data-theme="hospromise">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>hp-ds App Frame — prototyp porównawczy</title>
+  <meta name="description" content="Wariant hp-ds osadzony w dużej centralnej ramie aplikacji.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="app-frame.css">
+</head>
+<body class="app-frame-variant">
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+  <a class="variant-switch" href="../#/dashboard" aria-label="Otwórz pierwszy wariant hp-ds">
+    <span>Porównaj</span>
+    <strong>Wariant A · Full Canvas</strong>
+  </a>
+  <div id="app"></div>
+  <div class="toast-region" aria-live="polite" aria-atomic="true"></div>
+  <dialog class="modal" id="demo-modal" aria-labelledby="modal-title">
+    <form method="dialog" class="modal__surface">
+      <div class="modal__header">
+        <div>
+          <span class="eyebrow">Potwierdzenie</span>
+          <h2 id="modal-title">Zapisz zmiany?</h2>
+        </div>
+        <button class="icon-button" value="cancel" aria-label="Zamknij">×</button>
+      </div>
+      <p>To demonstracyjny modal hp-ds. W produkcie akcja zachowa kontekst strony i fokus użytkownika.</p>
+      <div class="modal__actions">
+        <button class="button button--tertiary" value="cancel">Anuluj</button>
+        <button class="button button--primary" value="confirm">Zapisz zmiany</button>
+      </div>
+    </form>
+  </dialog>
+  <script src="app.js" defer></script>
+</body>
+</html>
